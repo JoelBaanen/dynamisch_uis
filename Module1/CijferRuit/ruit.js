@@ -6,6 +6,6 @@ for (let i = 1; i <= aantal; i++){
     list = i === parseInt(aantal) ? list += "" : list += "-";
 }           
 for (let i = aantal; i >= 1; i--) {
-    list = list.replace(i, '').replace('-', '');
+    list = list.replace(i, '').split("").reverse().join("").replace('-', '').split("").reverse().join("");
     document.getElementById("antwoord").innerText += list + '\n';
 }
