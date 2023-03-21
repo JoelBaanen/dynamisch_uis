@@ -1,6 +1,6 @@
-const PRIJS_FRIS = 2.00;
-const PRIJS_BIER = 2.50;
-const PRIJS_WIJN = 3.00;
+const prijs_fris = 2.00;
+const prijs_bier = 3.50;
+const prijs_wijn = 5.00;
 var bonnetje = [];
 
 while (true) {
@@ -36,11 +36,11 @@ var product = bonnetje[i].product;
 var aantal = bonnetje[i].aantal;
 var prijs = 0;
 if (product === "fris") {
-prijs = PRIJS_FRIS;
+prijs = prijs_fris;
 } else if (product === "bier") {
-prijs = PRIJS_BIER;
+prijs = prijs_bier;
 } else if (product === "wijn") {
-prijs = PRIJS_WIJN;
+prijs = prijs_wijn;
     }
 var productTotaal = prijs * aantal;
 bonnetjeOutput += aantal + " " + product + " (" + prijs.toFixed(2) + " euro/stuk) = " + productTotaal.toFixed(2) + " euro<br>";
