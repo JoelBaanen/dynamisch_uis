@@ -9,7 +9,7 @@ if (product == "stop") {
 break;
 } else {
 if (product !== "fris" && product !== "bier" && product !== "wijn") {
-alert("Dit ken ik niet.");
+alert("Dat ken ik niet.");
 } else {
 let aantal = prompt("Hoeveel " + product + " wil je hebben?");
 let gevonden = false;
